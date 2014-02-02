@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Igui's new Tab Page",
+  "description": "New tab page with Bing Background",
+  "version": "1.0",
+
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+
+  "permissions": [
+    "storage",
+    "https://www.bing.com/"
+  ],
+
+  "icons": {
+    "200": "icon200.png",
+    "128": "icon128.png",
+    "19":"icon19.png"
+  }
+}
