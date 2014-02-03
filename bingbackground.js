@@ -55,8 +55,7 @@ window.addEventListener("DOMContentLoaded", function(){
     function putRandomBackground(imageUrls) {
         var randomIndex = Math.floor(Math.random() * imageUrls.length);
         var imageUrl = oneImageRegex.exec(imageUrls[randomIndex])[1];
-
-        var backgroundRule = "body { background-image: url(" + baseUrl + imageUrl + ") !important; background-size: 100% cover; }";
+        var backgroundRule = "body { background-image: url(" + baseUrl + imageUrl + "); }";
         var style = document.styleSheets[0];
         style.insertRule(backgroundRule, style.cssRules.length);
     }
